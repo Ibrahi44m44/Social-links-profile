@@ -1,0 +1,118 @@
+:root {
+    --Green: hsl(0, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 14%, 57%);
+    --Grey-800: hsl(0, 21%, 26%);
+    --Grey-900: hsl(0, 58%, 20%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--Grey-900);
+    height: 100vh;
+}
+
+p {
+    font-size: 14px;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: var(--Grey-800);
+    padding: 25px 20px;
+    min-width: 250px;
+}
+
+.box .image {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.box .image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.box .info {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.box .info h2 {
+    margin-bottom: 0.5em;
+    color: var(--White);
+}
+
+.box .info p {
+    color: var(--Green);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.box .jop {
+    text-align: center;
+    color: var(--Grey-700);
+    margin: 1em 0;
+    position: relative;
+    font-size: 12px;
+}
+
+.box .jop::after {
+    content: "\f10e";
+    font-weight: bold;
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1em;
+}
+
+.box .jop::before {
+    content: "\f10d";
+    font-weight: bold;
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1em;
+}
+
+.box .socil-links {}
+
+.box .socil-links ul.links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .socil-links ul.links li {
+    margin-bottom: 1em;
+    background-color: var(--Grey-700);
+    width: 90%;
+    padding: 10px ;
+    text-align: center;
+    border-radius: 10px;
+}
+.box .socil-links ul.links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+}
+
